@@ -41,11 +41,12 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/css/**",
                         "/js/**",
                         "/signup.html",
-                        "/signup",
+                        "/auth/sign-up",
                         "/login",
                         "/fail.html",
                         "/forbidden.html",
                         "/assets/**"
+//                      "/student/**"
                 ).permitAll()
                 .anyRequest().authenticated();
     }
